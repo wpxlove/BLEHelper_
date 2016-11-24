@@ -22,6 +22,13 @@ open class BLECentralHelper {
     var timer: Timer?
     var scanCompletion: ((_ peripheralList: [CBPeripheral])->(Void))?
     
+    class var sharedInstance : BLECentralHelper {
+        struct Static {
+            static let instance : BLECentralHelper = BLECentralHelper()
+        }
+        return Static.instance
+    }
+    
     public init() {
         // Set centralManager
         let bleCentralQueue: DispatchQueue = DispatchQueue(label: "forBLECentralManagerOnly", attributes: [])
