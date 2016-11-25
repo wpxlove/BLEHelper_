@@ -109,6 +109,15 @@ if let data = command.dataUsingEncoding(NSUTF8StringEncoding) {
     }
 ```
 
+```swift
+let command = "yourCommand"
+if let data = command.dataUsingEncoding(NSUTF8StringEncoding) {
+bleHelper.writeValue(data, deviceUUID: "yourDeviceUUID", serviceUUID: "yourServiceUUID", characteristicUUID: "youCharacteristicUUID", withResponse: true) { (success) -> (Void) in
+prettyLog("is write success: \(success)")
+}
+}
+```
+
 #### Delegate
 
 There are only two functions of its delegate. In the beginning, you must declare your class obeying the protocal: "BLECentralHelperDelegate."
@@ -125,6 +134,14 @@ Being called when received data from peripheral:
 ```swift
 func bleCentralDidReceiveData(data: NSData?, peripheral: CBPeripheral, characteristic: CBCharacteristic) {
 	//TODO: do something...
+    if let data = data {
+       data.byteReciveData()
+       print(data.description + "\(data.hexadecimal())")
+       var dataString :String = data.hexadecimal().lowercased()
+       dataString = dataString.removeSpaceAndNewline()
+       print("題示寄送的資料" + dataString)
+    }
+
 }
 ```
 ## Example

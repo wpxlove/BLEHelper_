@@ -107,4 +107,9 @@ extension Data {
         return map { String(format: "%02x", $0) }
             .joined(separator: "")
     }
+    
+    func byteReciveData(){
+        var values = [UInt8](repeating:0, count:self.count)
+        return  self.copyBytes(to: &values, count:self.count)
+    }
 }
