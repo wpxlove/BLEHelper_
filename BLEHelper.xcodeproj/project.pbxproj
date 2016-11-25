@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2779F3B01DE822DE004F7913 /* HexConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779F3AF1DE822DE004F7913 /* HexConversion.swift */; };
 		D81594381C8073AF00F0956F /* BLEHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D81594371C8073AF00F0956F /* BLEHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D815943F1C8073B000F0956F /* BLEHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81594341C8073AF00F0956F /* BLEHelper.framework */; };
 		D81594441C8073B000F0956F /* BLEHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81594431C8073B000F0956F /* BLEHelperTests.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2779F3AF1DE822DE004F7913 /* HexConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexConversion.swift; sourceTree = "<group>"; };
 		D81594341C8073AF00F0956F /* BLEHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLEHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81594371C8073AF00F0956F /* BLEHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEHelper.h; sourceTree = "<group>"; };
 		D81594391C8073AF00F0956F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				D81594371C8073AF00F0956F /* BLEHelper.h */,
 				D81594391C8073AF00F0956F /* Info.plist */,
 				D81594521C81D6C800F0956F /* Utils.swift */,
+				2779F3AF1DE822DE004F7913 /* HexConversion.swift */,
 				D81594541C833BE500F0956F /* Class */,
 				D81594501C81998600F0956F /* BLECentralHelper.swift */,
 			);
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D815944F1C8082BF00F0956F /* BLECentralManager.swift in Sources */,
+				2779F3B01DE822DE004F7913 /* HexConversion.swift in Sources */,
 				D81594511C81998600F0956F /* BLECentralHelper.swift in Sources */,
 				D81594531C81D6C800F0956F /* Utils.swift in Sources */,
 			);
